@@ -95,6 +95,9 @@ jobs:
               npm install
               npm install express-jwt@7.7.5 
               npm install --save-dev ts-jest@28.0.5
+              npm install --save-dev webpack@5.73.0
+              npm update mkdirp --depth 6
+              npm update kind-of --depth 14
               npm install --save-dev standard-version@9.5.0
               npm audit fix --audit-level=critical --force
               npm audit --audit-level=critical
