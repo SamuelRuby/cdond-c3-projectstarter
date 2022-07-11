@@ -93,7 +93,10 @@ jobs:
            command: |
               cd backend
               npm install
-              npm audit fix --audit-level=critical
+              npm install express-jwt@7.7.5 
+              npm install --save-dev ts-jest@28.0.5
+              npm install --save-dev standard-version@9.5.0
+              npm audit fix --audit-level=critical --force
               npm audit --audit-level=critical
 
                
